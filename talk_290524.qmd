@@ -1,0 +1,81 @@
+---
+pagetitle: "ICI resistance"
+format:
+  revealjs:
+    transition: fade
+    theme: [default, catppuccin.scss]
+    cap-location: bottom
+    appearance:
+      appearparents: true
+      autoelements: {"ul li": {"animation":"animate__fadeInLeft", "speed":"slow", "delay":"100"}}
+revealjs-plugins:
+  - appearance
+  - fontawesome
+---
+
+## {#title data-menu-title="Title" background-image="img/macchiato-bg.png"}
+
+[Primary Resistance Paradox: When Immune Checkpoint Inhibitors meet their match]{.title} [Martin Hong <br> SWS Research Grand Rounds <br> 29 May 2024]{.subtitle}
+
+## Overview {data-autoappear=true}
+
+* Background
+* Prospective biomarkers
+* Significance of Research
+
+## Origins of immune checkpoints
+
+::::{.columns}
+
+:::{.column width="60%"}
+![](./img/james_allison_crop.jpg){width="300" fig-align="left" .animate__fadeInUp data-delay="0"}
+<figcaption style="opacity: 0; animation: fadeInUp 2s ease-in-out forwards; animation-delay: 1.5s;">James Allison - CTLA4</figcaption>
+:::
+
+:::{.column width="40%"}
+![](./img/tasuku_honjo.jpg){width="300" fig-align="left" .animate__fadeInUp data-delay="3000"}
+<figcaption style="opacity: 0; animation: fadeInUp 2s ease-in-out forwards; animation-delay: 4.5s;">Tasuku Honjo - PD-1</figcaption>
+:::
+
+::::
+
+## Role of immune checkpoints {data-autoappear=true}
+
+::::{.columns}
+
+:::{.column width="40%"}
+
+::: {.incremental .fade-left}
+* Maintain tolerance to self {{< fa arrow-right >}} preventing auto-immunity
+* Hanahan & Weinberg identified immune evasion as a hallmark of cancer
+* Immune checkpoints, such as CTLA4 and PD-1, inhibits activation of lymphocytes when there is binding to APCs
+:::
+
+:::
+
+:::{.column width="60%"}
+
+![](./img/h_w_2011.jpg){.fragment .fade-left width="600"}
+
+:::
+
+::::
+
+## Mechanism of immune checkpoint inhibitors (ICIs) {data-autoappear=true}
+
+::::{.columns}
+
+:::{.column width="40%"}
+
+* Antigen presenting cells present tumour antigens to lymphocytes
+*  
+
+:::
+
+:::{.column width="40%"}
+![Tasuku Honjo - PD-1](./img/tasuku_honjo.jpg){width="300" fig-align="left" .animate__fadeInUp data-delay="400"}
+:::
+
+::::
+
+

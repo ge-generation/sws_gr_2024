@@ -10,7 +10,7 @@
 <link href="talk_290524_files/libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <link href="talk_290524_files/libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="talk_290524_files/libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.5.31">
+  <meta name="generator" content="quarto-1.5.32">
 
   <title>ICI resistance</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -30,7 +30,27 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-  </style>
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+      margin-bottom: 0em;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
   <link rel="stylesheet" href="talk_290524_files/libs/revealjs/dist/theme/quarto.css">
   <link href="talk_290524_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="talk_290524_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
@@ -340,6 +360,11 @@
 <li>Significance of Research</li>
 </ul>
 </section>
+<section>
+<section id="background" class="title-slide slide level1 center">
+<h1>Background</h1>
+
+</section>
 <section id="origins-of-immune-checkpoints" class="slide level2">
 <h2>Origins of immune checkpoints</h2>
 <div class="columns">
@@ -355,46 +380,415 @@ Tasuku Honjo - PD-1
 </figcaption>
 </div>
 </div>
+<aside class="notes">
+<p>James Allison and Tasuku Honjo won the Nobel Prize in Physiology or Medicine in 2018 for their discovery of checkpoints.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="role-of-immune-checkpoints" class="slide level2" data-autoappear="true">
+<section id="role-of-immune-checkpoints" class="slide level2">
 <h2>Role of immune checkpoints</h2>
 <div class="columns">
 <div class="column" style="width:40%;">
-<div class="fade-left">
+<div class="fragment fade-left" data-fragment-index="1">
 <ul>
-<li class="fragment">Maintain tolerance to self <i class="fa-solid fa-arrow-right" aria-label="arrow-right"></i> preventing auto-immunity</li>
-<li class="fragment">Hanahan &amp; Weinberg identified immune evasion as a hallmark of cancer</li>
-<li class="fragment">Immune checkpoints, such as CTLA4 and PD-1, inhibits activation of lymphocytes when there is binding to APCs</li>
+<li>Maintain tolerance to self <i class="fa-solid fa-arrow-right" aria-label="arrow-right"></i> preventing auto-immunity</li>
+</ul>
+</div>
+<div class="fragment fade-left" data-fragment-index="2">
+<ul>
+<li>Hanahan &amp; Weinberg identified immune evasion as a hallmark of cancer</li>
+</ul>
+</div>
+<div class="fragment fade-left" data-fragment-index="4">
+<ul>
+<li>Immune checkpoints, such as CTLA4 and PD-1, inhibits activation of lymphocytes when there is binding to APCs</li>
 </ul>
 </div>
 </div><div class="column" style="width:60%;">
-<p><img data-src="./img/h_w_2011.jpg" class="fragment fade-left" width="600"></p>
+<div class="r-stack">
+<p><img data-src="./img/h_w_2011.jpg" class="fragment fade-left" data-fragment-index="3" width="600"> <sup>1</sup></p>
+<p><img data-src="./img/t_act.png" class="fragment fade-left" data-fragment-index="5" width="250"> <sup>2</sup></p>
+<p><img data-src="./img/t_ctla4.png" class="fragment fade-left" data-fragment-index="6" width="250"></p>
+<p><img data-src="./img/t-pd1.png" class="fragment fade-left" data-fragment-index="7" width="250"></p>
+</div>
+</div>
+</div>
+<aside><ol class="aside-footnotes"><li id="fn1"><p><span class="citation" data-cites="hanahanHallmarksCancerNext2011">Hanahan and Weinberg (<a href="#/references" role="doc-biblioref" onclick="">2011</a>)</span></p></li><li id="fn2"><p>Created with BioRender.com</p></li></ol></aside></section>
+<section id="immune-checkpoint-inhibitors-icis" class="slide level2">
+<h2>Immune checkpoint inhibitors (ICIs)</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<div class="fragment fade-left">
+<ul>
+<li>Monoclonal antibodies against:
+<ul>
+<li>CTLA4</li>
+<li>PD-1</li>
+<li>PD-L1</li>
+</ul></li>
+</ul>
+</div>
+<div class="fragment fade-left">
+<div class="fragment semi-fade-out">
+<ul>
+<li>Inhibitory signal</li>
+</ul>
+</div>
+</div>
+<div class="fragment fade-left">
+<ul>
+<li>Resulting in immune activation &amp; 🤞 restoration of immune recognition of cancer</li>
+</ul>
+</div>
+</div><div class="column" style="width:60%;">
+<div class="fragment fade-left">
+<ul>
+<li>Some ICIs include:
+<ul>
+<li>Ipilimumab (anti-CTLA4)</li>
+<li>Pembrolizumab (anti-PD-1)</li>
+<li>Nivolumab (anti-PD-1)</li>
+<li>Durvalumab (anti-PD-L1)</li>
+<li>Atezolizumab (anti-PD-L1)</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+</section></section>
+<section>
+<section id="what-is-currently-known" class="title-slide slide level1 center">
+<h1>What is currently known</h1>
+
+</section>
+<section id="markers-to-predict-response" class="slide level2">
+<h2>Markers to predict response</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="fragment fade-left" data-fragment-index="1">
+<ul>
+<li>PD-L1 expression</li>
+</ul>
+</div>
+<p><br></p>
+<div class="fragment fade-left" data-fragment-index="3">
+<ul>
+<li>Tumour mutational burden</li>
+</ul>
+</div>
+<p><br><br></p>
+<div class="fragment fade-left" data-fragment-index="5">
+<ul>
+<li>DNA mismatch repair deficiency/High microsatellite instability</li>
+</ul>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="fragment fade-right" data-fragment-index="2">
+<ul>
+<li>So far only useful in some tumours, and variable testing (tumour only, TME as well)</li>
+</ul>
+</div>
+<div class="fragment fade-right" data-fragment-index="4">
+<ul>
+<li>Looking most useful, but unable to test routinely in clinical practice</li>
+</ul>
+</div>
+<p><br></p>
+<div class="fragment fade-right" data-fragment-index="6">
+<ul>
+<li>An indirect way to assess for TMB, but so far not fully useful in all tumour types</li>
+</ul>
+</div>
+</div>
+</div>
+</section></section>
+<section>
+<section id="why-look-for-biomarkers-for-resistance-if-there-is-already-biomarkers-to-predict-response" class="title-slide slide level1 center">
+<h1>Why look for biomarkers for resistance if there is already biomarkers to predict response?</h1>
+
+</section>
+<section class="slide level2">
+
+<p><img data-src="./img/kn042_tps50.png" class="animate__bounceInRight animate__slow"> <sup>1</sup></p>
+<aside class="notes">
+<p>This is the overall survival for KN042, which is one of the main IO vs chemo trials in lung cancer. Note despite picking for TPS &gt;= 50%, there is still a greater proportion of people dying in the pembrolizumab group in the first 6-ish months then those who had chemotherapy</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<aside><ol class="aside-footnotes"><li id="fn3"><p><span class="citation" data-cites="decastroFiveYearOutcomesPembrolizumab2023">Castro et al. (<a href="#/references" role="doc-biblioref" onclick="">2023</a>)</span></p></li></ol></aside></section></section>
+<section>
+<section id="what-is-known-so-far" class="title-slide slide level1 center">
+<h1>What is known so far</h1>
+
+</section>
+<section id="stk11lkb1" class="slide level2">
+<h2>STK11/LKB1</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<div class="fragment fade-left" data-fragment-index="1">
+<ul>
+<li>STK11/LKB1 is a serine/threonine kinase involved in:</li>
+</ul>
+</div>
+<div class="fragment fade-left" data-fragment-index="2">
+<ul>
+<li>Cellular energy signalling - particularly in stressful situations</li>
+</ul>
+</div>
+<div class="fragment fade-left" data-fragment-index="3">
+<ul>
+<li>Tumour suppressor - affects the mTOR pathway</li>
+</ul>
+</div>
+<div class="fragment fade-left" data-fragment-index="4">
+<ul>
+<li>LKB1 germline mutation is most famous as the cause of Peutz-Jeghers syndrome</li>
+</ul>
+</div>
+</div><div class="column" style="width:60%;">
+<div class="fragment fade-right" data-fragment-index="5">
+<table>
+<colgroup>
+<col style="width: 100%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>Diagnostic criteria</strong></td>
+</tr>
+<tr class="even">
+<td>2 or more histologically confirmed Peutz-Jeghers (PJ) polyps</td>
+</tr>
+<tr class="odd">
+<td>Any number of PJ polyps in a person with a known family history of PJS in a close relative</td>
+</tr>
+<tr class="even">
+<td>Characteristic mucocutaneous pigmentation in an individual who has a family history of PJS in close relative</td>
+</tr>
+<tr class="odd">
+<td>Any number of PJ polyps in an individual with the characteristic mucocutaneous pigmentation</td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 </div>
 </section>
-<section id="mechanism-of-immune-checkpoint-inhibitors-icis" class="slide level2" data-autoappear="true">
-<h2>Mechanism of immune checkpoint inhibitors (ICIs)</h2>
-<div class="columns">
-<div class="column" style="width:40%;">
+<section id="stk11lkb1-in-lung-cancer" class="slide level2">
+<h2>STK11/LKB1 in lung cancer</h2>
+<div class="fragment fade-left" data-fragment-index="1">
 <ul>
-<li>Antigen presenting cells present tumour antigens to lymphocytes</li>
-<li></li>
+<li>STK11/LKB1 mutations are found in 30% of lung cancers</li>
 </ul>
-</div><div class="column" style="width:40%;">
-<div class="quarto-figure quarto-figure-left">
-<figure>
-<p><img data-src="./img/tasuku_honjo.jpg" class="animate__fadeInUp" data-delay="400" width="300"></p>
-<figcaption>Tasuku Honjo - PD-1</figcaption>
-</figure>
+</div>
+<div class="fragment fade-left" data-fragment-index="2">
+<ul>
+<li>STK11/LKB1 loss has been associated with:
+<ul>
+<li>Higher grade, LN metastases and poorer OS in breast cancer</li>
+<li>Promotes metastases in melanoma tumour models</li>
+</ul></li>
+</ul>
+</div>
+<div class="fragment fade-left" data-fragment-index="3">
+<ul>
+<li>STK11 has been found to be commonly co-mutated with KRAS mutations in lung cancer</li>
+</ul>
+</div>
+<div class="fragment fade-left" data-fragment-index="4">
+<ul>
+<li>In lung cancer samples and <em>in vivo</em> studies, STK11 loss <i class="fa-solid fa-arrow-right" aria-label="arrow-right"></i> lower tumour infiltration of lymphocytes</li>
+</ul>
+</div>
+</section>
+<section id="sting" class="slide level2">
+<h2>STING</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="fragment fade-left" data-fragment-index="1">
+<ul>
+<li>cyclic GMP-AMP synthase (cGAS)-stimulator of interferon genes (STING) pathway is an important immune pathway in cells</li>
+</ul>
+</div>
+<div class="fragment fade-left" data-fragment-index="3">
+<ul>
+<li>The pathway leads to formation of pro-inflammatory cytokines after detecting cytosolic DNA</li>
+</ul>
+</div>
+<div class="fragment fade-left" data-fragment-index="4">
+<ul>
+<li>This is important in dealing with viral infections, but also in tumours, DNA damage <i class="fa-solid fa-arrow-right" aria-label="arrow-right"></i> cytosolic DNA</li>
+</ul>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="fragment fade-left" data-fragment-index="2" data-fig-align="right">
+<p><img data-src="./img/sting_pathway.png"><sup>1</sup></p>
 </div>
 </div>
 </div>
+<aside><ol class="aside-footnotes"><li id="fn4"><p>Created with BioRender.com</p></li></ol></aside></section>
+<section id="stk11-sting" class="slide level2">
+<h2>STK11 &amp; STING</h2>
+<p><img data-src="./img/stk11_sting.png" class="absolute animate__fadeOut animate__slow" style="top: 100px; left: 400px; width: 350px; " data-delay="30000"><sup>1</sup></p>
+<p><img data-src="./img/stk11loss_sting.png" class="absolute animate__fadeIn animate__slow" style="top: 100px; left: 400px; width: 350px; " data-delay="500"></p>
+<aside class="notes">
+<p>This is the presumed interaction between STK11/AMPK pathway and cGAS-STING pathways. The reduction in STK11 leads to reduction in AMPK. This leads to both direct and indirect downregulation of STING expression by methylation of the STING promoter by: 1. EZH2 2. DNMT1 The indirect pathway is due to reduction in S-adenosyl-methionine which is a main source of methyl group for DNMT1.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<aside><ol class="aside-footnotes"><li id="fn5"><p>Created with BioRender.com</p></li></ol></aside></section>
+<section id="sting-haplotypes" class="slide level2">
+<h2>STING haplotypes</h2>
+<div class="fragment fade-left">
+<ul>
+<li>As explained previously, cGAS-STING pathway has an important role in immune activation</li>
+</ul>
+</div>
+<div class="fragment fade-left">
+<ul>
+<li>However, it is recognised that there are STING SNP variants in people with variable activity:
+<ul>
+<li>R71H, G230A, R293Q (most common variant)</li>
+<li>R232H</li>
+</ul></li>
+</ul>
+</div>
+<div class="fragment fade-left">
+<ul>
+<li>The variants can lead to reduction in STING activity <i class="fa-solid fa-arrow-right" aria-label="arrow-right"></i> reduced pro-inflammatory cytokines
+<ul>
+<li>This may have arisen as a protective mechanism in some populations against viral infections</li>
+</ul></li>
+</ul>
+</div>
+<div class="fragment fade-left">
+<ul>
+<li>However, does <i class="fa-solid fa-arrow-down" aria-label="arrow-down"></i> activity <i class="fa-solid fa-arrow-right" aria-label="arrow-right"></i> poor tumour immune response?</li>
+</ul>
+</div>
+</section>
+<section id="other-possible-markers" class="slide level2">
+<h2>Other possible markers</h2>
+<div class="fragment fade-left">
+<ul>
+<li>TCR repertoire (e.g.&nbsp;diversity)</li>
+</ul>
+</div>
+<div class="fragment fade-left">
+<ul>
+<li>Cytokine levels prior to starting treatment</li>
+</ul>
+</div>
+</section></section>
+<section>
+<section id="why-is-understanding-primary-resistance-important" class="title-slide slide level1 center">
+<h1>Why is understanding primary resistance important?</h1>
+
+</section>
+<section id="neoadjuvant-treatment" class="slide level2">
+<h2>Neoadjuvant treatment</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="fragment fade-left">
+<ul>
+<li>Neoadjuvant treatment = Cancer treatment prior to surgery</li>
+</ul>
+</div>
+<div class="fragment fade-left">
+<ul>
+<li>This can lead to:
+<ul>
+<li>Shrinkage of cancer <i class="fa-solid fa-arrow-right" aria-label="arrow-right"></i> improved surgery</li>
+<li>May be only opportunity to have systemic treatment</li>
+<li>In some cancers, better survival</li>
+</ul></li>
+</ul>
+</div>
+<div class="fragment fade-left">
+<ul>
+<li>However, not all patients respond to treatment as discussed.</li>
+</ul>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="fragment fade-right">
+<p><img data-src="./img/kn671.png"><sup>1</sup></p>
+</div>
+</div>
+</div>
+<aside><ol class="aside-footnotes"><li id="fn6"><p><span class="citation" data-cites="wakeleePerioperativePembrolizumabEarlyStage2023">Wakelee et al. (<a href="#/references" role="doc-biblioref" onclick="">2023</a>)</span></p></li></ol></aside></section>
+<section id="aims-of-project" class="slide level2">
+<h2>Aims of project</h2>
+<div class="fragment fade-left">
+<ul>
+<li>Investigate the impact of the STING pathway in immunotherapy resistance</li>
+</ul>
+</div>
+<div class="fragment fade-left">
+<ul>
+<li>Investigate STING haplotypes and their possible role in immune suppressive TME</li>
+</ul>
+</div>
+<div class="fragment fade-left">
+<ul>
+<li>Investigate other possible factors which may impact on immune suppressive TME</li>
+</ul>
+</div>
+</section>
+<section id="acknowledgements" class="slide level2">
+<h2>Acknowledgements</h2>
+<ul>
+<li>Supervisors: Prof Tara Roberts &amp; Prof Wei Chua for all of their time and advice</li>
+<li>Dr Alex James and Dr Yafeng Ma for all of their input - particularly around STING haplotypes</li>
+</ul>
+</section>
+<section id="references" class="slide level2 smaller scrollable">
+<h2>References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-decastroFiveYearOutcomesPembrolizumab2023" class="csl-entry" role="listitem">
+Castro, Gilberto de, Iveta Kudaba, Yi-Long Wu, Gilberto Lopes, Dariusz M. Kowalski, Hande Z. Turna, Christian Caglevic, et al. 2023. <span>“Five-Year Outcomes with Pembrolizumab Versus Chemotherapy as First-Line Therapy in Patients with Non–Small-Cell Lung Cancer and Programmed Death Ligand-1 Tumor Proportion Score ≥ 1.”</span> <a href="https://doi.org/10.1200/JCO.21.02885">https://doi.org/10.1200/JCO.21.02885</a>.
+</div>
+<div id="ref-hanahanHallmarksCancerNext2011" class="csl-entry" role="listitem">
+Hanahan, Douglas, and Robert A. Weinberg. 2011. <span>“Hallmarks of Cancer: The Next Generation.”</span> <a href="https://doi.org/10.1016/j.cell.2011.02.013">https://doi.org/10.1016/j.cell.2011.02.013</a>.
+</div>
+<div id="ref-wakeleePerioperativePembrolizumabEarlyStage2023" class="csl-entry" role="listitem">
+Wakelee, Heather, Moishe Liberman, Terufumi Kato, Masahiro Tsuboi, Se-Hoon Lee, Shugeng Gao, Ke-Neng Chen, et al. 2023. <span>“Perioperative Pembrolizumab for Early-Stage Non–Small-Cell Lung Cancer.”</span> <a href="https://doi.org/10.1056/NEJMoa2302983">https://doi.org/10.1056/NEJMoa2302983</a>.
+</div>
+</div>
+</section></section>
+<section id="any-questions" class="title-slide slide level1 center">
+<h1>Any questions?</h1>
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
 </div>
 </div>
 </section>
+
+
     </div>
   </div>
 
@@ -427,7 +821,7 @@ Tasuku Honjo - PD-1
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
 'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
-'appearance': {"hideagain":true,"delay":300,"debug":false,"appearevent":"slidetransitionend","autoappear":false,"autoelements":{"ul li":{"animation":"animate__fadeInLeft","speed":"slow","delay":"100"}},"appearparents":true},
+'appearance': {"hideagain":true,"delay":300,"debug":false,"appearevent":"slidetransitionend","autoappear":false,"autoelements":false,"appearparents":true},
 'smaller': false,
  
         // Display controls in the bottom right corner

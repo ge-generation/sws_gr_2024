@@ -7,7 +7,7 @@ format:
     cap-location: bottom
     appearance:
       appearparents: true
-      autoelements: {"ul li": {"animation":"animate__fadeInLeft", "speed":"slow", "delay":"100"}}
+bibliography: /home/martin/Documents/PhD/sws_gr/references.bib
 revealjs-plugins:
   - appearance
   - fontawesome
@@ -22,6 +22,8 @@ revealjs-plugins:
 * Background
 * Prospective biomarkers
 * Significance of Research
+
+# Background
 
 ## Origins of immune checkpoints
 
@@ -39,15 +41,25 @@ revealjs-plugins:
 
 ::::
 
-## Role of immune checkpoints {data-autoappear=true}
+::: {.notes}
+James Allison and Tasuku Honjo won the Nobel Prize in Physiology or Medicine in 2018 for their discovery of checkpoints.
+:::
+
+## Role of immune checkpoints 
 
 ::::{.columns}
 
 :::{.column width="40%"}
 
-::: {.incremental .fade-left}
+:::{.fragment fragment-index=1 .fade-left}
 * Maintain tolerance to self {{< fa arrow-right >}} preventing auto-immunity
+:::
+
+:::{.fragment fragment-index=2 .fade-left}
 * Hanahan & Weinberg identified immune evasion as a hallmark of cancer
+:::
+
+:::{.fragment fragment-index=4 .fade-left}
 * Immune checkpoints, such as CTLA4 and PD-1, inhibits activation of lymphocytes when there is binding to APCs
 :::
 
@@ -55,27 +67,310 @@ revealjs-plugins:
 
 :::{.column width="60%"}
 
-![](./img/h_w_2011.jpg){.fragment .fade-left width="600"}
+::: {.r-stack}
+![](./img/h_w_2011.jpg){.fragment fragment-index=3 .fade-left width="600"} ^[@hanahanHallmarksCancerNext2011]
+
+![](./img/t_act.png){.fragment fragment-index=5 .fade-left width="250"} ^[Created with BioRender.com]
+
+![](./img/t_ctla4.png){.fragment fragment-index=6 .fade-left width="250"}
+
+![](./img/t-pd1.png){.fragment fragment-index=7 .fade-left width="250"}
+:::
 
 :::
 
 ::::
 
-## Mechanism of immune checkpoint inhibitors (ICIs) {data-autoappear=true}
+## Immune checkpoint inhibitors (ICIs) 
 
 ::::{.columns}
 
 :::{.column width="40%"}
 
-* Antigen presenting cells present tumour antigens to lymphocytes
-*  
+:::{.fragment .fade-left}
+* Monoclonal antibodies against:
+  + CTLA4
+  + PD-1
+  + PD-L1
+:::
+
+:::{.fragment .fade-left}
+:::{.fragment .semi-fade-out}
+* Inhibitory signal
+:::
+:::
+
+:::{.fragment .fade-left}
+* Resulting in immune activation & 🤞 restoration of immune recognition of cancer
+:::
 
 :::
 
-:::{.column width="40%"}
-![Tasuku Honjo - PD-1](./img/tasuku_honjo.jpg){width="300" fig-align="left" .animate__fadeInUp data-delay="400"}
+:::{.column width="60%"}
+
+:::{.fragment .fade-left}
+* Some ICIs include:
+  + Ipilimumab (anti-CTLA4)
+  + Pembrolizumab (anti-PD-1)
+  + Nivolumab (anti-PD-1)
+  + Durvalumab (anti-PD-L1)
+  + Atezolizumab (anti-PD-L1)
+:::
+
 :::
 
 ::::
 
+# What is currently known
 
+## Markers to predict response
+
+::::{.columns}
+
+:::{.column width="50%"}
+
+:::{.fragment fragment-index=1 .fade-left}
+* PD-L1 expression
+:::
+
+</br>
+
+:::{.fragment fragment-index=3 .fade-left}
+* Tumour mutational burden 
+:::
+
+</br></br>
+
+:::{.fragment fragment-index=5 .fade-left}
+* DNA mismatch repair deficiency/High microsatellite instability
+:::
+
+:::
+
+:::{.column width="50%"}
+
+:::{.fragment fragment-index=2 .fade-right}
+* So far only useful in some tumours, and variable testing (tumour only, TME as well)
+:::
+
+:::{.fragment fragment-index=4 .fade-right}
+* Looking most useful, but unable to test routinely in clinical practice
+:::
+
+</br>
+
+:::{.fragment fragment-index=6 .fade-right}
+* An indirect way to assess for TMB, but so far not fully useful in all tumour types
+:::
+
+:::
+
+::::
+
+# Why look for biomarkers for resistance if there is already biomarkers to predict response?
+
+---
+
+![](./img/kn042_tps50.png){.animate__bounceInRight .animate__slow} ^[@decastroFiveYearOutcomesPembrolizumab2023]
+
+::: {.notes}
+This is the overall survival for KN042, which is one of the main IO vs chemo trials in lung cancer. Note despite picking for TPS >= 50%, there is still a greater proportion of people dying in the pembrolizumab group in the first 6-ish months then those who had chemotherapy 
+:::
+
+# What is known so far
+
+## STK11/LKB1 
+
+::::{.columns}
+
+:::{.column width="40%"}
+
+:::{.fragment fragment-index=1 .fade-left}
+* STK11/LKB1 is a serine/threonine kinase involved in:
+:::
+
+:::{.fragment fragment-index=2 .fade-left}
+  + Cellular energy signalling - particularly in stressful situations
+:::
+
+:::{.fragment fragment-index=3 .fade-left}
+  + Tumour suppressor - affects the mTOR pathway
+:::
+
+:::{.fragment fragment-index=4 .fade-left}
+* LKB1 germline mutation is most famous as the cause of Peutz-Jeghers syndrome 
+:::
+
+:::
+
+:::{.column width="60%"}
+
+:::{.fragment fragment-index=5 .fade-right}
++--------------------------------------------------------------------------------------------------------------+
+| **Diagnostic criteria**                                                                                      |
++--------------------------------------------------------------------------------------------------------------+
+| 2 or more histologically confirmed Peutz-Jeghers (PJ) polyps                                                 |
++--------------------------------------------------------------------------------------------------------------+
+| Any number of PJ polyps in a person with a known family history of PJS in a close relative                   |
++--------------------------------------------------------------------------------------------------------------+
+| Characteristic mucocutaneous pigmentation in an individual who has a family history of PJS in close relative |
++--------------------------------------------------------------------------------------------------------------+
+| Any number of PJ polyps in an individual with the characteristic mucocutaneous pigmentation                  |
++--------------------------------------------------------------------------------------------------------------+
+:::
+
+:::
+
+::::
+
+## STK11/LKB1 in lung cancer
+
+:::{.fragment fragment-index=1 .fade-left}
+* STK11/LKB1 mutations are found in 30% of lung cancers
+:::
+
+:::{.fragment fragment-index=2 .fade-left}
+* STK11/LKB1 loss has been associated with:
+  + Higher grade, LN metastases and poorer OS in breast cancer
+  + Promotes metastases in melanoma tumour models
+:::
+
+:::{.fragment fragment-index=3 .fade-left}
+* STK11 has been found to be commonly co-mutated with KRAS mutations in lung cancer
+:::
+
+:::{.fragment fragment-index=4 .fade-left}
+* In lung cancer samples and *in vivo* studies, STK11 loss {{< fa arrow-right >}} lower tumour infiltration of lymphocytes
+:::
+
+## STING
+
+::::{.columns}
+
+:::{.column width="50%"}
+
+:::{.fragment fragment-index=1 .fade-left}
+* cyclic GMP-AMP synthase (cGAS)-stimulator of interferon genes (STING) pathway is an important immune pathway in cells
+:::
+
+:::{.fragment fragment-index=3 .fade-left}
+* The pathway leads to formation of pro-inflammatory cytokines after detecting cytosolic DNA
+:::
+
+:::{.fragment fragment-index=4 .fade-left}
+* This is important in dealing with viral infections, but also in tumours, DNA damage {{< fa arrow-right >}} cytosolic DNA
+:::
+
+:::
+
+:::{.column width="50%"}
+
+:::{.fragment fragment-index=2 .fade-left fig-align="right"}
+
+![](./img/sting_pathway.png)^[Created with BioRender.com]
+
+:::
+
+:::
+
+::::
+
+## STK11 & STING 
+
+![](./img/stk11_sting.png){.absolute width="350" top=100 left=400 .animate__fadeOut .animate__slow data-delay="30000"}^[Created with BioRender.com]
+
+![](./img/stk11loss_sting.png){.absolute width="350" top=100 left=400 .animate__fadeIn .animate__slow data-delay="500"}
+
+:::{.notes}
+This is the presumed interaction between STK11/AMPK pathway and cGAS-STING pathways. The reduction in STK11 leads to reduction in AMPK. This leads to both direct and indirect downregulation of STING expression by methylation of the STING promoter by:
+1. EZH2
+2. DNMT1
+The indirect pathway is due to reduction in S-adenosyl-methionine which is a main source of methyl group for DNMT1.
+:::
+
+## STING haplotypes
+
+:::{.fragment .fade-left}
+* As explained previously, cGAS-STING pathway has an important role in immune activation
+:::
+
+::: {.fragment .fade-left}
+* However, it is recognised that there are STING SNP variants in people with variable activity:
+  + R71H, G230A, R293Q (most common variant)
+  + R232H
+:::
+
+::: {.fragment .fade-left}
+* The variants can lead to reduction in STING activity {{< fa arrow-right >}} reduced pro-inflammatory cytokines
+  + This may have arisen as a protective mechanism in some populations against viral infections
+:::
+
+::: {.fragment .fade-left}
+* However, does {{< fa arrow-down >}} activity {{< fa arrow-right >}} poor tumour immune response?
+:::
+
+## Other possible markers
+
+:::{.fragment .fade-left}
+* TCR repertoire (e.g. diversity)
+:::
+
+::: {.fragment .fade-left}
+* Cytokine levels prior to starting treatment
+:::
+
+# Why is understanding primary resistance important?
+
+## Neoadjuvant treatment
+:::: {.columns}
+
+::: {.column width="50%"}
+
+::: {.fragment .fade-left}
+* Neoadjuvant treatment = Cancer treatment prior to surgery
+:::
+::: {.fragment .fade-left}
+* This can lead to:
+  + Shrinkage of cancer {{< fa arrow-right >}} improved surgery
+  + May be only opportunity to have systemic treatment
+  + In some cancers, better survival
+:::
+::: {.fragment .fade-left}
+* However, not all patients respond to treatment as discussed.
+:::
+
+:::
+
+::: {.column width="50%"}
+
+::: {.fragment .fade-right}
+![](./img/kn671.png)^[@wakeleePerioperativePembrolizumabEarlyStage2023]
+:::
+
+:::
+
+::::
+## Aims of project
+
+:::{.fragment .fade-left}
+* Investigate the impact of the STING pathway in immunotherapy resistance
+:::
+
+::: {.fragment .fade-left}
+* Investigate STING haplotypes and their possible role in immune suppressive TME
+:::
+
+::: {.fragment .fade-left}
+* Investigate other possible factors which may impact on immune suppressive TME
+:::
+
+## Acknowledgements
+* Supervisors: Prof Tara Roberts & Prof Wei Chua for all of their time and advice
+* Dr Alex James and Dr Yafeng Ma for all of their input - particularly around STING haplotypes
+
+## References
+
+::: {#refs}
+:::
+
+# Any questions?

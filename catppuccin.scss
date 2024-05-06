@@ -73,3 +73,36 @@ $body-color: #CAD3F5;
     font-weight: 300;
     font-size: 0.8em;
   }
+  
+  .reveal .slide aside {
+    font-family: "Lato", sans-serif;
+    color: #CAD3F5;
+    font-weight: 300;
+    font-size: 0.4em;
+    text-align: right;
+    position: absolute;
+    right: -200px;
+    bottom: -20px;
+  }
+  
+  .reveal .slide sup {
+    font-family: "Lato", sans-serif;
+    color: #CAD3F5;
+    font-weight: 300;
+    font-size: 0.6em;
+    text-align: left;
+  }
+
+  .reveal .slides section .fragment-highlight-red.visible {
+    font-family: "Lato", sans-serif;
+    color: #ED8796;
+    font-weight: 300;
+    font-size: 0.8em;
+  }
+
+  .reveal td {
+    font-family: "Lato", sans-serif;
+    color: #CAD3F5;
+    font-weight: 300;
+    font-size: 0.8em;
+  }

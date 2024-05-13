@@ -7,6 +7,8 @@ format:
     cap-location: bottom
     appearance:
       appearparents: true
+  pptx:
+    output-file: sws_gr_2024.pptx
 bibliography: /home/martin/Documents/PhD/sws_gr/references.bib
 revealjs-plugins:
   - appearance
@@ -15,35 +17,15 @@ revealjs-plugins:
 
 ## {#title data-menu-title="Title" background-image="img/macchiato-bg.png"}
 
-[Primary Resistance Paradox: When Immune Checkpoint Inhibitors meet their match]{.title} [Martin Hong <br> SWS Research Grand Rounds <br> 29 May 2024]{.subtitle}
+[Primary Resistance Paradox: When Immune Checkpoint Inhibitors meet their match]{.title} [PhD candidate: Martin Hong <br> Supervisors: Prof Tara Roberts & Prof Wei Chua <br> SWS Research Grand Rounds <br> 29 May 2024]{.subtitle}
 
 ## Overview {data-autoappear=true}
 
 * Background
-* Prospective biomarkers
 * Significance of Research
+* Prospective biomarkers
 
 # Background
-
-## Origins of immune checkpoints
-
-::::{.columns}
-
-:::{.column width="60%"}
-![](./img/james_allison_crop.jpg){width="300" fig-align="left" .animate__fadeInUp data-delay="0"}
-<figcaption style="opacity: 0; animation: fadeInUp 2s ease-in-out forwards; animation-delay: 1.5s;">James Allison - CTLA4</figcaption>
-:::
-
-:::{.column width="40%"}
-![](./img/tasuku_honjo.jpg){width="300" fig-align="left" .animate__fadeInUp data-delay="3000"}
-<figcaption style="opacity: 0; animation: fadeInUp 2s ease-in-out forwards; animation-delay: 4.5s;">Tasuku Honjo - PD-1</figcaption>
-:::
-
-::::
-
-::: {.notes}
-James Allison and Tasuku Honjo won the Nobel Prize in Physiology or Medicine in 2018 for their discovery of checkpoints.
-:::
 
 ## Role of immune checkpoints 
 
@@ -60,7 +42,7 @@ James Allison and Tasuku Honjo won the Nobel Prize in Physiology or Medicine in 
 :::
 
 :::{.fragment fragment-index=4 .fade-left}
-* Immune checkpoints, such as CTLA4 and PD-1, inhibits activation of lymphocytes when there is binding to APCs
+* Immune checkpoints, e.g. cytotoxic T-lymphocyte associated protein 4 (CTLA4) and programmed cell death protein 1 (PD-1), inhibits activation of lymphocytes
 :::
 
 :::
@@ -68,13 +50,19 @@ James Allison and Tasuku Honjo won the Nobel Prize in Physiology or Medicine in 
 :::{.column width="60%"}
 
 ::: {.r-stack}
-![](./img/h_w_2011.jpg){.fragment fragment-index=3 .fade-left width="600"} ^[@hanahanHallmarksCancerNext2011]
+::: {.fragment fragment-index=3 .fade-in-then-out .absolute width="510" height="347" top=150 right=-30}
+![](./img/h_w_2011.jpg)^[@hanahanHallmarksCancerNext2011]
+:::
+::: {.fragment fragment-index=5 .fade-in-then-out .absolute width="200" height="520" top=100 right=100}
+![](./img/t_act.png)^[Created with BioRender.com]
+:::
+::: {.fragment fragment-index=6 .fade-in-then-out .absolute width="200" height="520" top=100 right=100}
+![](./img/t_ctla4.png)^[Created with BioRender.com]
+:::
+::: {.fragment fragment-index=7 .fade-in-then-out .absolute width="200" height="520" top=100 right=100}
+![](./img/t_pd1.png)^[Created with BioRender.com]
+:::
 
-![](./img/t_act.png){.fragment fragment-index=5 .fade-left width="250"} ^[Created with BioRender.com]
-
-![](./img/t_ctla4.png){.fragment fragment-index=6 .fade-left width="250"}
-
-![](./img/t-pd1.png){.fragment fragment-index=7 .fade-left width="250"}
 :::
 
 :::
@@ -91,7 +79,7 @@ James Allison and Tasuku Honjo won the Nobel Prize in Physiology or Medicine in 
 * Monoclonal antibodies against:
   + CTLA4
   + PD-1
-  + PD-L1
+  + Programmed death-ligand 1 (PD-L1)
 :::
 
 :::{.fragment .fade-left}
@@ -108,7 +96,7 @@ James Allison and Tasuku Honjo won the Nobel Prize in Physiology or Medicine in 
 
 :::{.column width="60%"}
 
-:::{.fragment .fade-left}
+:::{.fragment .fade-right}
 * Some ICIs include:
   + Ipilimumab (anti-CTLA4)
   + Pembrolizumab (anti-PD-1)
@@ -121,91 +109,107 @@ James Allison and Tasuku Honjo won the Nobel Prize in Physiology or Medicine in 
 
 ::::
 
-# What is currently known
+# Why is understanding primary resistance important?
 
-## Markers to predict response
-
-::::{.columns}
-
-:::{.column width="50%"}
-
-:::{.fragment fragment-index=1 .fade-left}
-* PD-L1 expression
+## 
+::: {.fragment fragment-index=1 .absolute width="729" height="186" top=10 left=10}
+![](./img/nivo_melanoma.png)^[@robertNivolumabPreviouslyUntreated2015]
 :::
 
-</br>
-
-:::{.fragment fragment-index=3 .fade-left}
-* Tumour mutational burden 
+::: {.fragment fragment-index=2 .absolute width="904" height="319" top=100 left=150}
+![](./img/cm214.png)^[@albigesNivolumabIpilimumabSunitinib2020]
 :::
 
-</br></br>
+::: {.fragment fragment-index=3 .absolute width="998" height="344" top=200 left=50}
+![](./img/kn177.png)^[@andrePembrolizumabMicrosatelliteInstabilityHigh2020]
+:::
 
-:::{.fragment fragment-index=5 .fade-left}
-* DNA mismatch repair deficiency/High microsatellite instability
+::: {.fragment fragment-index=4 .absolute width="908" height="207" top=400 left=25}
+![](./img/kn355.png)^[@cortesPembrolizumabChemotherapyAdvanced2022]
+:::
+
+::: {.fragment fragment-index=5 .absolute width="1611" height="338" top=200 left=-100}
+![](./img/kn042.png)^[@mokPembrolizumabChemotherapyPreviously2019]
+:::
+
+##
+
+![](./img/kn042_tps50.png){.animate__bounceInRight .animate__slow} ^[@decastroFiveYearOutcomesPembrolizumab2023]
+
+::: {.fragment .fade-up}
+**75** (25%) people receiving pembrolizumab died in the first 6 months vs **69** (23%) in control
+:::
+
+::: {.notes}
+This is the overall survival for KN042, which is one of the main IO vs chemo trials in lung cancer. Note despite picking for TPS >= 50%, there is still a greater proportion of people dying in the pembrolizumab group in the first 6-ish months then those who had chemotherapy 
+:::
+
+## Neoadjuvant treatment
+:::: {.columns}
+
+::: {.column width="50%"}
+
+::: {.fragment .fade-left}
+* Neoadjuvant treatment = Cancer treatment prior to surgery
+:::
+::: {.fragment .fade-left}
+* This can lead to:
+  + Shrinkage of cancer {{< fa arrow-right >}} improved surgery
+  + May be only opportunity to have systemic treatment
+  + In some cancers, better survival
+:::
+::: {.fragment .fade-left}
+* However, not **all** patients respond to treatment similar to in advanced disease.
 :::
 
 :::
 
-:::{.column width="50%"}
+::: {.column width="50%"}
 
-:::{.fragment fragment-index=2 .fade-right}
-* So far only useful in some tumours, and variable testing (tumour only, TME as well)
+::: {.fragment .fade-right}
+![](./img/kn671.png)^[@wakeleePerioperativePembrolizumabEarlyStage2023]
 :::
 
-:::{.fragment fragment-index=4 .fade-right}
-* Looking most useful, but unable to test routinely in clinical practice
+::: {.fragment .fade-right}
+* **16** patients had progressive disease
 :::
 
-</br>
-
-:::{.fragment fragment-index=6 .fade-right}
-* An indirect way to assess for TMB, but so far not fully useful in all tumour types
+::: {.fragment .fade-right}
+* Progression of disease = curable {{< fa arrow-right >}} **incurable**
 :::
 
 :::
 
 ::::
 
-# Why look for biomarkers for resistance if there is already biomarkers to predict response?
-
----
-
-![](./img/kn042_tps50.png){.animate__bounceInRight .animate__slow} ^[@decastroFiveYearOutcomesPembrolizumab2023]
-
 ::: {.notes}
-This is the overall survival for KN042, which is one of the main IO vs chemo trials in lung cancer. Note despite picking for TPS >= 50%, there is still a greater proportion of people dying in the pembrolizumab group in the first 6-ish months then those who had chemotherapy 
+I will be focusing primarily on lung cancer as it is one of the cancers where immunotherapy is still used on its own as monotherapy and therefore allow for better understanding of the resistance mechanisms.
 :::
 
-# What is known so far
 
-## STK11/LKB1 
+# What is known about 1° resistance so far in lung cancer
+
+## [Serine/threonine kinase 11 (STK11)/Liver kinase 1 (LKB1)]{style="font-size: 0.75em"}
 
 ::::{.columns}
 
-:::{.column width="40%"}
+:::{.column width="50%"}
 
 :::{.fragment fragment-index=1 .fade-left}
 * STK11/LKB1 is a serine/threonine kinase involved in:
+  + Cellular energy signalling through AMP-activated protein kinase (AMPK) - particularly in stressful situations
+  + Tumour suppressor - affects the mammalian target of rapamycin (mTOR) pathway
 :::
 
 :::{.fragment fragment-index=2 .fade-left}
-  + Cellular energy signalling - particularly in stressful situations
-:::
-
-:::{.fragment fragment-index=3 .fade-left}
-  + Tumour suppressor - affects the mTOR pathway
-:::
-
-:::{.fragment fragment-index=4 .fade-left}
 * LKB1 germline mutation is most famous as the cause of Peutz-Jeghers syndrome 
 :::
 
 :::
 
-:::{.column width="60%"}
+:::{.column width="50%"}
 
-:::{.fragment fragment-index=5 .fade-right}
+:::{.fragment fragment-index=3 .fade-right}
 +--------------------------------------------------------------------------------------------------------------+
 | **Diagnostic criteria**                                                                                      |
 +--------------------------------------------------------------------------------------------------------------+
@@ -226,13 +230,7 @@ This is the overall survival for KN042, which is one of the main IO vs chemo tri
 ## STK11/LKB1 in lung cancer
 
 :::{.fragment fragment-index=1 .fade-left}
-* STK11/LKB1 mutations are found in 30% of lung cancers
-:::
-
-:::{.fragment fragment-index=2 .fade-left}
-* STK11/LKB1 loss has been associated with:
-  + Higher grade, LN metastases and poorer OS in breast cancer
-  + Promotes metastases in melanoma tumour models
+* STK11/LKB1 mutations are found in approximately 20% of lung cancers^[@debruijnAnalysisVisualizationLongitudinal2023]
 :::
 
 :::{.fragment fragment-index=3 .fade-left}
@@ -240,7 +238,11 @@ This is the overall survival for KN042, which is one of the main IO vs chemo tri
 :::
 
 :::{.fragment fragment-index=4 .fade-left}
-* In lung cancer samples and *in vivo* studies, STK11 loss {{< fa arrow-right >}} lower tumour infiltration of lymphocytes
+* In lung cancer samples and *in vivo* studies, KRAS mutations with STK11 loss {{< fa arrow-right >}} lower tumour infiltration of lymphocytes
+:::
+
+:::{.fragment fragment-index=4 .fade-left}
+* Furthermore, clinical studies have shown that patients with STK11 mutations have worse survival outcomes^[@skoulidisSTK11LKB1Mutations2018; @malhotraClinicalOutcomesImmune2022]
 :::
 
 ## STING
@@ -265,7 +267,7 @@ This is the overall survival for KN042, which is one of the main IO vs chemo tri
 
 :::{.column width="50%"}
 
-:::{.fragment fragment-index=2 .fade-left fig-align="right"}
+:::{.fragment fragment-index=2 .fade-left .absolute width="540" height="360" top=150 right=-50}
 
 ![](./img/sting_pathway.png)^[Created with BioRender.com]
 
@@ -290,19 +292,16 @@ The indirect pathway is due to reduction in S-adenosyl-methionine which is a mai
 
 ## STING haplotypes
 
-:::{.fragment .fade-left}
-* As explained previously, cGAS-STING pathway has an important role in immune activation
-:::
-
 ::: {.fragment .fade-left}
-* However, it is recognised that there are STING SNP variants in people with variable activity:
+* It is recognised that there are single nucleotide polymorphisms (SNP) variants of STING in people with variable activity:
   + R71H, G230A, R293Q (most common variant)
   + R232H
 :::
 
 ::: {.fragment .fade-left}
 * The variants can lead to reduction in STING activity {{< fa arrow-right >}} reduced pro-inflammatory cytokines
-  + This may have arisen as a protective mechanism in some populations against viral infections
+  + This may have arisen as a protective mechanism in some populations against viral infections^[@suDNAinducedCGAMPEnhances2020]
+    - In severe dengue, increased cytokines is a presumed mechanism for pathogenesis
 :::
 
 ::: {.fragment .fade-left}
@@ -312,44 +311,13 @@ The indirect pathway is due to reduction in S-adenosyl-methionine which is a mai
 ## Other possible markers
 
 :::{.fragment .fade-left}
-* TCR repertoire (e.g. diversity)
+* TCR repertoire (e.g. diverse epitopes)
 :::
 
 ::: {.fragment .fade-left}
 * Cytokine levels prior to starting treatment
 :::
 
-# Why is understanding primary resistance important?
-
-## Neoadjuvant treatment
-:::: {.columns}
-
-::: {.column width="50%"}
-
-::: {.fragment .fade-left}
-* Neoadjuvant treatment = Cancer treatment prior to surgery
-:::
-::: {.fragment .fade-left}
-* This can lead to:
-  + Shrinkage of cancer {{< fa arrow-right >}} improved surgery
-  + May be only opportunity to have systemic treatment
-  + In some cancers, better survival
-:::
-::: {.fragment .fade-left}
-* However, not all patients respond to treatment as discussed.
-:::
-
-:::
-
-::: {.column width="50%"}
-
-::: {.fragment .fade-right}
-![](./img/kn671.png)^[@wakeleePerioperativePembrolizumabEarlyStage2023]
-:::
-
-:::
-
-::::
 ## Aims of project
 
 :::{.fragment .fade-left}

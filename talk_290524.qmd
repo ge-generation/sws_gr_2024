@@ -186,6 +186,34 @@ This is the overall survival for KN042, which is one of the main IO vs chemo tri
 I will be focusing primarily on lung cancer as it is one of the cancers where immunotherapy is still used on its own as monotherapy and therefore allow for better understanding of the resistance mechanisms.
 :::
 
+## Lung cancer in Australia
+:::: {.columns}
+
+::: {.column width="50%"}
+
+::: {.fragment .fade-left}
+* Lung cancer is:
+  + 5th most commonly diagnosed cancer
+  + Most commonly diagnosed at Stage IV
+  + Most common cause of cancer-related mortality
+  + 5 year survival for Stage IV disease is 3.2%
+:::
+
+:::
+
+::: {.column width="50%"}
+
+::: {.fragment .fade-in-then-out .absolute width="674" height="472" top=150 right=-175}
+![](./img/lung_incidence.png)^[@australianinstituteofhealthandwelfareCancerDataAustralia2023]
+:::
+
+::: {.fragment .fade-in-then-out .absolute width="673" height="438" top=150 right=-175}
+![](./img/lung_survival.png)
+:::
+
+:::
+
+::::
 
 # What is known about 1° resistance so far in lung cancer
 
